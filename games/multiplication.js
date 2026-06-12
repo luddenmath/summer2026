@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const version = "1.1.3"; // Update this version number when you make changes
+  const version = "1.1.1"; // Update this version number when you make changes
 
   console.log("DOM fully loaded and parsed");
 
@@ -12,29 +12,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Function to generate random math questions
   const generateQuestion = () => {
-    const num1 = Math.floor(Math.random() * 10) + 1;
-    const num2 = Math.floor(Math.random() * 10) + 1;
-    const operators = ['+', '-', '*', '/'];
+    const num1 = Math.floor(Math.random() * 12) + 1;
+    const num2 = Math.floor(Math.random() * 12) + 1;
+    const operators = ['*'];
     const operator = operators[Math.floor(Math.random() * operators.length)];
 
     let question, answer;
     switch (operator) {
-      case '+':
-        question = `${num1} + ${num2}`;
-        answer = num1 + num2;
-        break;
-      case '-':
-        question = `${num1} - ${num2}`;
-        answer = num1 - num2;
-        break;
+    
       case '*':
         question = `${num1} × ${num2}`;
         answer = num1 * num2;
         break;
-      case '/':
-        question = `${num1 * num2} ÷ ${num1}`;
-        answer = num2;
-        break;
+     
     }
     return { question, answer };
   };
