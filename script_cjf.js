@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const version = "1.1.2"; // Update this version number when you make changes
+  const version = "1.1.3"; // Update this version number when you make changes
 
   console.log("DOM fully loaded and parsed");
 
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
       totalCorrect++; // Increment total correct count
       timeoutValue = 400;
     } else {
-      resultElement.innerHTML = `Incorrect. <BR> The correct answer is ${answer}. <BR> Try again!@@@@@@@@@@@@@@@@@@@@@`;
+      resultElement.innerHTML = `Incorrect. <BR> The correct answer is ${answer}. <BR> Try again!`;
       resultElement.style.color = 'red';
       currentStreak = 0; // Reset the streak on incorrect answer
       totalIncorrect++; // Increment total incorrect count
