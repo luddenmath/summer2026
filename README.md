@@ -1,1 +1,1 @@
-# cfol-math-facts
+# sample-math-facts
