@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Math Drill</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#game { display: none; }
+
+.question {
+    font-size: 40px;
+    margin: 20px;
+}
+
+input {
+    font-size: 24px;
+    width: 120px;
+    text-align: center;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+#feedback {
+    font-size: 24px;
+    margin: 15px;
+    height: 30px;
+}
+
+#score {
+    font-size: 20px;
+    margin-top: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Math Drill Practice</h1>
+
+<div id="menu">
+    <h2>Select Options</h2>
+
+    <p>
+        Operation:
+        <select id="operation">
+            <option value="add">Addition</option>
+            <option value="subtract">Subtraction</option>
+            <option value="multiply">Multiplication</option>
+            <option value="divide">Division</option>
+        </select>
+    </p>
+
+    <p>
+        Number Type:
+        <select id="numberType">
+            <option value="positive">Positive Only</option>
+            <option value="integer">Positive & Negative</option>
+        </select>
+    </p>
+
+    <button onclick="startGame()">Start Drill</button>
+</div>
+
+<div id="game">
+    <div class="question" id="question"></div>
+
+    <input type="number" id="answer">
+
+    <br><br>
+
+    <button onclick="checkAnswer()">Submit</button>
+
+    <div id="feedback"></div>
+
+    <div id="score">
+        Correct: <span id="correct">0</span>
+        |
+        Wrong: <span id="wrong">0</span>
+    </div>
+
+    <br>
+
+    <button onclick="backToMenu()">Back to Menu</button>
+</div>
+
+<!-- THIS is the key change -->
+<script src="drill.js"></script>
+
+</body>
+</html>
