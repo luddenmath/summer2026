@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
       resultElement.style.color = 'red';
       currentStreak = 0; // Reset the streak on incorrect answer
       totalIncorrect++; // Increment total incorrect count
-      timeoutValue = 500;
+      timeoutValue = 800;
       
     }
 
