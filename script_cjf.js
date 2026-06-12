@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const correctElement = document.getElementById('correct');
     const incorrectElement = document.getElementById('incorrect');
     const attemptedElement = document.getElementById('attempted');
-    var timeoutValue = 100;
+    var timeoutValue = 400;
 
     // Check if the user's answer is correct
     totalAttempted++; // Increment total attempted for each question 
