@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
       totalCorrect++; // Increment total correct count
       timeoutValue = 400;
     } else {
-      resultElement.innerHTML = `Incorrect. The correct answer is ${answer}. Try again!`;
+      resultElement.innerHTML = `Incorrect. \n The correct answer is ${answer}. \n Try again!`;
       resultElement.style.color = 'red';
       currentStreak = 0; // Reset the streak on incorrect answer
       totalIncorrect++; // Increment total incorrect count
